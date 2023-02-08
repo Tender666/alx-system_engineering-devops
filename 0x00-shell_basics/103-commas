@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A --group-directories-first | awk '/^[.]/ { print $0 "/" } /^[[:alnum:]]/ { print $0 }' | sort | paste -sd "," - | sed 's/,$/\n/'
+ls -amvp
